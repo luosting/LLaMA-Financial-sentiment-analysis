@@ -1,4 +1,4 @@
-Author: Wei Luo(罗威)
+# Author: Wei Luo(罗威)
 # Pre-trained Large Language Models for Financial Sentiment Analysis.
 This project contains codes for the research paper title "Pre-trained Large Language Models for Financial Sentiment Analysis". Authors: Wei Luo, Dihong Gong.
 
