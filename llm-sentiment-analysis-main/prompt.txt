@@ -1,0 +1,43 @@
+We want to perform the sentiment analsysis for financial news according to their titles.
+You are asked to choose the most suitable sentiment from ("postive", "negative", "neutral") with signle-choice questions.
+Please follow the following examples to answer the question.
+
+News Title: About Nokia Nokia is a pioneer in mobile telecommunications and the world's leading maker of mobile devices.
+Choices: A) positive. B) negative. C) neutral.
+Answer:A
+
+News Title: The transaction is planned to be financed with a EUR40m market-based loan granted by Standard Chartered Bank Hong Kong.
+Choices: A) positive. B) negative. C) neutral.
+Answer:C
+
+News Title: This is a significant milestone for Benefon, helping us to secure critical USP's for our personal navigation product roadmap for 2007 and beyond, '' commented Simon Button, Chief Technology Officer at Benefon.
+Choices: A) positive. B) negative. C) neutral.
+Answer:A
+
+News Title: Most of the permanent layoffs will be in the plywood and sawn timber sectors of the Finnish company's operations at several domestic mills, where earlier this year it temporarily laid off some 1,200 workers to save costs.
+Choices: A) positive. B) negative. C) neutral.
+Answer:B
+
+News Title: The transaction is planned to be financed with a EUR40m market-based loan granted by Standard Chartered Bank Hong Kong.
+Choices: A) positive. B) negative. C) neutral.
+Answer:C
+
+News Title: In the building and home improvement trade, sales decreased by 22.5% to EUR 201.4 mn.
+Choices: A) positive. B) negative. C) neutral.
+Answer:B
+
+News Title: The duration of the contract is 37 months.
+Choices: A) positive. B) negative. C) neutral.
+Answer:C
+
+News Title: Operating profit for 2009 lower than outlook published earlier.
+Choices: A) positive. B) negative. C) neutral.
+Answer:B
+
+News Title: In the third quarter, net sales increased by 12% year-on-year to EUR 159.5 million, or by 6% at comparable currency rates growth.
+Choices: A) positive. B) negative. C) neutral.
+Answer:A
+
+News Title: {news_title}
+Choices: A) positive. B) negative. C) neutral.
+Answer:
