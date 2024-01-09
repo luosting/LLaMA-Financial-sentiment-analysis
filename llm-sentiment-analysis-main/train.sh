@@ -12,9 +12,9 @@ TENSOR_TYPE="BFLOAT16" # FLOAT16 or BFLOAT16 or FLOAT32
 #cat hostfile.txt.h800 > hostfile.txt
 readarray -t hosts < hostfile.txt
 
-project_dir="/apdcephfs_nj6/share_4274659/dihonggong/sent"
+project_dir="/rovin_home/sentiment_analysis"
 local_data_dir="/dockerdata"
-src_checkpoint_dir="/apdcephfs_nj6/share_4274659/dihonggong/sent/checkpoints/llama2_7b_base"
+src_checkpoint_dir="/rovin_home/sentiment_analysis/checkpoints/llama2_7b_base"
 dst_checkpoint_dir="$local_data_dir/llama2_7b_base"
 
 # The total number of nodes
@@ -25,10 +25,10 @@ nproc_per_node=4 # mod
 
 # The address and port of the master node
 master_addr=${hosts[0]}
-master_port=6002
+master_port=6001
 
 # The path to the Python script
-train_command="train.py --load_ckpt_dir $dst_checkpoint_dir --save_ckpt_dir /dockerdata/rst_checkpoints --tokens_dir /apdcephfs_nj6/share_4274659/dihonggong/sent/data/reuters_tokens --tokenizer_model /apdcephfs_nj6/share_4274659/dihonggong/sent/checkpoints/llama2_7b_base/tokenizer.model  --micro_batch_size $MICRO_BATCH_SIZE --global_batch_size $GLOBAL_BATCH_SIZE --max_seq_len $MAX_SEQ_LENGTH --tensor_type $TENSOR_TYPE --warmup_tokens_b 0 --first_cycle_tokens_b 0.018 --max_lr 3e-5 --min_lr 3e-6 --grad_clip 0 --train_sft"
+train_command="train.py --load_ckpt_dir $dst_checkpoint_dir --save_ckpt_dir /dockerdata/rst_checkpoints --tokens_dir /rovin_home/sentiment_analysis/reuters_tokens --tokenizer_model /rovin_home/sentiment_analysis/checkpoints/llama2_7b_base/tokenizer.model  --micro_batch_size $MICRO_BATCH_SIZE --global_batch_size $GLOBAL_BATCH_SIZE --max_seq_len $MAX_SEQ_LENGTH --tensor_type $TENSOR_TYPE --warmup_tokens_b 0 --first_cycle_tokens_b 0.018 --max_lr 3e-5 --min_lr 3e-6 --grad_clip 0 --train_sft"
 
 kill_pythons() {
   # Add your cleanup code here
