@@ -26,5 +26,5 @@ LPS | 0.71
 HSC | 0.71
 FinBERT | 0.84
 `Ours (Few-shots)` | `0.677`
-`Ours (Further Pretraining)` | `0.712`
-`Ours (SFT)` | `0.894`
+`Ours (SFT)` | `0.899`
+`Ours (3-class classification)` | `0.897`
