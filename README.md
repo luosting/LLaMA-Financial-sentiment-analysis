@@ -24,7 +24,7 @@ LSTM with ELMo | 0.75
 ULMFit | 0.83
 LPS | 0.71
 HSC | 0.71
-FinBERT | 0.84
+FinBERT | 0.86
 `Ours (Few-shots)` | `0.68`
 `Ours (SFT)` | `0.90`
 `Ours (3-class classification)` | `0.90`
